@@ -1,0 +1,9 @@
+$successMessageFontColor: #0F0;
+$borderColor: #000;
+
+
+#notice{
+    padding: 3px;
+    border: 2px solid $borderColor;
+    color: $successMessageFontColor;
+}
