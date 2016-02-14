@@ -1,5 +1,13 @@
 <%= render "/shared/search" %>
-<h2>Latest Recipes</h2>
+<h3>Latest Recipes</h3>
+<% if @latest_recipe %>
+  <h4><%=@latest_recipe.title%></h4>
+  <p><%=@latest_recipe.ingredients%></p>
+  <p><%=@latest_recipe.instructions%></p>
+<% else %>
+  <p>There are no recipes to display</p>
+<% end %>
+
 <p>There are <%= @number_of_recipes %> recipes total.</p>
 <% if logged_in? %>
     You are logged in as <%=current_user.username %>
