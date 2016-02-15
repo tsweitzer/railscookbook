@@ -35,7 +35,7 @@ gem 'bcrypt', '~> 3.1.7'
 group :production do
   gem 'pg'
   gem 'rails_12factor'
-  gem puma
+  gem 'puma'
 end
 
 group :development, :test do
